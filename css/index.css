@@ -343,14 +343,10 @@ html{
     right: 0;
 }
 .bx-controls-direction .bx-prev:before{
-    content:"\e93c";
-    font-family: 'xeicon';
+    content:"\276e";
 }
 .bx-controls-direction .bx-next:before{
-    /* content:"\02EC";
-    font-family: 'xeicon'; */
     content:"\276F";
-    transform: rotate(180deg);
 }
 .bx-pager{
     position: absolute;
