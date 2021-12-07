@@ -345,13 +345,9 @@ html{
 }
 .bx-controls-direction .bx-prev:before{
     content:"\276E";
-    /* font-family: 'xeicon'; */
 }
 .bx-controls-direction .bx-next:before{
-    /* content:"\02EC";
-    font-family: 'xeicon'; */
     content:"\276F";
-    transform: rotate(180deg);
 }
 .bx-pager{
     position: absolute;
@@ -403,6 +399,7 @@ html{
     display: inline-block;
     justify-content: center;
     margin: auto;
+    width: 50%;
     text-align: center;
     padding: 50px;
 }

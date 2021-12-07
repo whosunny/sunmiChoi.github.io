@@ -27,7 +27,27 @@
             @media (max-width:50rem){
                 .designer,
                 .web_designer{
-                    font-size: 2rem;
+                    font-size: 1rem;
+                    overflow-wrap: break-word;
+                }
+            }
+            @media (max-width:30rem){
+                .see_button a span,
+                .introduce > li,
+                .index_link a span{
+                    font-size: 0.4rem;
+                    overflow-wrap: break-word;
+                }
+            }
+            @media (max-width:30rem){
+                .contact_line,.see_line{
+                    margin-top: 8px;
+                }
+            }
+            @media (max-width:30rem){
+                .see_button > a:hover:before,
+                .index_link > a:hover:before{
+                    width: 150px;
                 }
             }
             @media (max-width:50rem) {
@@ -37,17 +57,14 @@
             }
             @media (max-width:30rem){
                 .bx-wrapper{
-                    margin-top: 580px;
+                    margin-top: 0px;
+                    margin-bottom: 300px;
                 }
             }
             @media (max-width:50rem){
-                .sliderbox h1{
-                    font-size: 1.5rem;
-                }
-            }
-            @media (max-width:50rem){
+                .sliderbox h1,
                 .index_text h1{
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     overflow-wrap: break-word;
                 }
             }
@@ -70,7 +87,7 @@
             }
             </style>
     </head>
-    <body>
+    <body style="overflow: auto;">
         <!-- 롤링배너 -->
         <div class="header_banner" data-duration="20000">
             <div style="width: 100000px; transform: translateX(0px); animation: 17.733s linear 0s infinite normal none running marqueeAnimation-50736710;" class="js-marquee-wrapper">
