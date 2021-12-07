@@ -267,17 +267,15 @@ html{
     cursor: pointer;
     transition: all,0.7s;
 }
-.submit_button:hover{
-    background: #07135c;
-    color: white;
-    box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.25);
-}
 .submit_icon{
-    transform: translate(10px,0px) rotate(-45deg);
+    width: 20px;
+    height: 20px;
+    transform: translate(5px,-5px);
     transition: all,0.5s;
 }
 .submit_button:hover > .submit_icon{
-    transform: translate(20px, -10px) rotate(-20deg);
+    color: #fff;
+    transform: translate(20px, -10px) rotate(20deg);
 }
 .submit_text{
     font-size: 0.8rem;
