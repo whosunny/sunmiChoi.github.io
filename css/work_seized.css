@@ -287,48 +287,45 @@ html{
     width: 20px;
 }
 /* 페이지 맨 위로 가는 키 */
-#scroll-top{
+.to-top{
     position: fixed;
     right: 0;
     bottom: 5rem;
-    padding: 0 0.7rem;
-}
-.link__decor{
-    display: inline-flex;
+    padding: 0 0.3rem;
+    display: flex;
     align-items: center;
-    font-weight: 700;
-    text-decoration: none;
-}
-#scroll-top .link-text{
+    justify-content: center;
     color: #7C7979;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active{
+    bottom: 5rem;
+    pointer-events: auto;
+    opacity: 1;
+}
+.link-text{
     transform: rotate(180deg);
-    position: relative;
-    top: -2px;
-}
-.link__decor .link-text{
     color: #7C7979;
-    z-index: 1;
-}
-.sub-caps{
     letter-spacing: 3px;
     font-size:1rem;
     text-transform: uppercase;
 }
-#scroll-top .line{
+.to-top .line{
     background: #7C7979;
     width: 40px;
-}
-.link__decor span.line{
     height: 1px;
     position: relative;
     margin-left: 15px;
 }
-#scroll-top .line:before,
-#scroll-top .line:after{
+
+.to-top .line:before,
+.to-top .line:after{
     background: #7C7979;
 }
-.link__decor span.line:after,
-.link__decor span.line:before{
+.to-top span.line:after,
+.to-top span.line:before{
     content:"";
     position: absolute;
     right: 0;
@@ -337,9 +334,9 @@ html{
     height: 1px;
     transform-origin: center right;
 }
-.link__decor span.line:after{
+.to-top span.line:after{
     transform: rotate(35deg);
 }
-.link__decor span.line:before{
+.to-top span.line:before{
     transform: rotate(-35deg);
 }

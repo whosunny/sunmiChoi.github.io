@@ -180,7 +180,6 @@ html{
 /* 메인영역 */
 
 #work_main{
-    /* background: violet; */
     width: 100%;
     height: auto;
     margin-top: 10%;
@@ -190,18 +189,15 @@ html{
     width: 100%;
     height: 380px;
     color: #7C7979;
-    /* background: #c0bdbd; */
 }
 .main__bar-con{
     position: relative;
     height: auto;
     border-bottom: 1px solid #e8e8e8;
-    /* background: #c0bdbd; */
     transition: all,0.5s;
 }
 .main__bar-con:hover{
     transform: scale(1.1);
-    /* background: #f7f7f79c; */
 }
 .main__bar-con:hover div:nth-child(2){
     color: #000;
@@ -271,7 +267,6 @@ html{
 }
 .footer_wrapper {
     width: 100%;
-    /* background: #000; */
     height: 180px;
     padding: 0;
     bottom: 0;
@@ -301,7 +296,6 @@ html{
 }
 .footer_copyright p{
     text-align: center;
-    /* background: violet; */
     font-weight: 300;
     font-size: 13px;
 }
@@ -313,55 +307,45 @@ html{
     width: 20px;
 }
 /* 페이지 맨 위로 가는 키 */
-#scroll-top{
+.to-top{
     position: fixed;
     right: 0;
     bottom: 5rem;
-    padding: 0 0.7rem;
-    /* z-index: 800; */
-}
-.link__decor{
-    display: inline-flex;
+    padding: 0 0.3rem;
+    display: flex;
     align-items: center;
-    font-weight: 700;
-    text-decoration: none;
-    /* color: #7C7979; */
-    /* transition: all .5s cubic-bezier(0.77,0,.175,1); */
-    cursor: pointer;
-}
-#scroll-top .link-text{
+    justify-content: center;
     color: #7C7979;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active{
+    bottom: 5rem;
+    pointer-events: auto;
+    opacity: 1;
+}
+.link-text{
     transform: rotate(180deg);
-    position: relative;
-    top: -2px;
-}
-.link__decor .link-text{
     color: #7C7979;
-    z-index: 1;
-}
-.sub-caps{
     letter-spacing: 3px;
     font-size:1rem;
     text-transform: uppercase;
 }
-#scroll-next .line, #scroll-top .line{
-    width: 40px;
-}
-#scroll-top .line{
+.to-top .line{
     background: #7C7979;
-}
-.link__decor span.line{
+    width: 40px;
     height: 1px;
     position: relative;
     margin-left: 15px;
-    /* transition: all .5s cubic-bezier(0.77,0,.175,1); */
 }
-#scroll-top .line:before,
-#scroll-top .line:after{
+
+.to-top .line:before,
+.to-top .line:after{
     background: #7C7979;
 }
-.link__decor span.line:after,
-.link__decor span.line:before{
+.to-top span.line:after,
+.to-top span.line:before{
     content:"";
     position: absolute;
     right: 0;
@@ -370,9 +354,9 @@ html{
     height: 1px;
     transform-origin: center right;
 }
-.link__decor span.line:after{
+.to-top span.line:after{
     transform: rotate(35deg);
 }
-.link__decor span.line:before{
+.to-top span.line:before{
     transform: rotate(-35deg);
 }

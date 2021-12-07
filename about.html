@@ -35,18 +35,18 @@
             }
             @media (max-width:50rem){
                 .sub-caps{
-                    font-size: 0.8rem;
+                    font-size: 0.6rem;
                     margin-right: 10px;
                 }
             }
             @media (max-width:50rem){
-                #scroll-top .line{
-                    width: 20px;
+                .to-top .line{
+                    width: 10px;
                 }
             }
             @media (max-width:30rem){
-                .link__decor span.line:after,
-                .link__decor span.line:before{
+                .to-top span.line:after,
+                .to-top span.line:before{
                     width: 8px;
                 }
             }
@@ -171,9 +171,10 @@
                 </div>
             </div>
             <!-- 페이지 맨 위로 가는 키 -->
-            <a class="link__decor scroll-top--light" id="scroll-top" href="#wrap" style="transform: rotate(-90deg) translateY(0px);">
+            <a class="to-top" href="#" style="transform: rotate(-90deg) translateY(0px);">
                 <span class="link-text sub-caps">TOP</span>
                 <span class="line"></span>
             </a>
+            <script src="js/scroll.js"></script>
         </footer>    
 </html>
