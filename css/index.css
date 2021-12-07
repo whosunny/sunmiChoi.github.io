@@ -489,6 +489,7 @@ html{
 /* 고정 푸터영역 */
 .footer{
     width: 100%;
+    height: auto;
     position: relative;
 }
 .footer_wrapper {
@@ -504,32 +505,34 @@ html{
     margin: auto;
     width: 100%;
     background: #07135c;
-    height: 100%;
+    height: auto;
 }
 .footer_copyright p,
 .footer_copyright,
 .footer_letter{
     color: #fff;
 }
-.footer_letter{
+.footer_letter,.footer_copyright{
+    padding: 10px;
+}
+.footer_letter,
+.footer_copyright p{
     letter-spacing: 0.2rem;
     text-align: center;
-    font-size: 17px;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 .footer_copyright{
     width: 100%;
     margin: 0px auto;
 }
-.footer_copyright p{
-    text-align: center;
-    font-weight: 300;
-    font-size: 13px;
-}
 .footer_links{
+    width: 100%;
     margin: 40px auto;
+    text-align: center;
 }
 .footer_links img{
-    padding: 0px 10px;
+    padding: 10px;
     width: 20px;
 }
 /* 페이지 맨 위로 가는 키 */

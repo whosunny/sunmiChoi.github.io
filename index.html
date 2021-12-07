@@ -34,6 +34,7 @@
             @media (max-width:30rem){
                 .see_button a span,
                 .introduce > li,
+                .index_text > li,
                 .index_link a span{
                     font-size: 0.4rem;
                     overflow-wrap: break-word;
@@ -69,7 +70,9 @@
                 }
             }
             @media (max-width:50rem){
-                .sub-caps{
+                .sub-caps,
+                .footer_letter,
+                .footer_copyright p{
                     font-size: 0.6rem;
                     margin-right: 10px;
                 }
@@ -83,6 +86,21 @@
                 .to-top span.line:after,
                 .to-top span.line:before{
                     width: 8px;
+                }
+            }
+            @media (max-width:50rem){
+                .footer_content{
+                    width: 100%;
+                    height: auto;
+                    padding: 10% 0 0;
+                    text-align: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+            @media (max-width:50rem){
+                .footer_links{
+                    width: 30%;
                 }
             }
             </style>
