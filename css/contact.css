@@ -1,0 +1,385 @@
+html{
+    scroll-behavior: smooth;
+}
+/* 롤링배너 */
+.header_banner{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 30px;
+    background-color: #07135c;
+    z-index: 3;
+    line-height: 25px;
+    color: #fff;
+}
+.header_banner a {
+    color: inherit;
+}
+.header_banner span {
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 13px;
+}
+/* 전체값 */
+#wrap{
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0px auto;
+}
+/* 사이드바메뉴 */
+#menuicon{
+    display: none;
+}
+#menuicon + label{
+    display: block;
+    margin-top: -12px;
+    width: 54px;
+    height: 40px;
+    position: fixed;
+    cursor: pointer;
+    transition: all, 0.5s;
+}
+.round1,
+.round2,
+.round3{
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #7C7979;
+    transition: all, 0.8s;
+}
+.round1{
+    left: 0;
+}
+.round2{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.round3{
+    right: 0;
+}
+#menuicon:checked+label span:nth-child(1){
+    left: -23%;
+}
+#menuicon:checked+label span:nth-child(3){
+    right: -23%;
+}
+.sidebar{
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 65, 71, 0.9);
+    position: fixed;
+    top: 0;
+    left: -500vh;
+    z-index: 1;
+    transition: all, 1s;
+}
+#menuicon:checked + label + div{
+    left: 0;
+}
+#menuicon:checked + label{
+    z-index: 2;
+}
+#menuicon:checked + label span{
+    border: 1px solid #fff;
+    opacity: 70%;
+}
+.sidebar_menu{
+    text-align: left;
+    width: 500px;
+    height: auto;
+    margin: 12% 40%;
+}
+.sidebar_menu a{
+    color: #fff;
+}
+/* 사이드바 인 메뉴 */
+.dap1 > li {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 20px;
+}
+.dap1 > li > a:before{
+    width: 9px;
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+    display: block;
+    content: "";
+    right: -195px;
+    top: 14px;
+}
+.dap1 > li > a:after{
+    width: 1px;
+    height: 9px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    content: "";
+    margin-top: -15px;
+    margin-left: 199px;
+}
+.dap2{
+    display: none;
+    width: 30%;
+    margin-top: 30px;
+    transition: all,1s;
+}
+.sidebar_menu .dap1 > li:hover > .dap2{
+    display: block;
+}
+.dap2 li{
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: left;
+    padding: 20px;
+}
+/* 네비게이션 메뉴 */
+.nav{
+    position: absolute;
+    margin-left: 90px;
+}
+.nav_bar li{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.0rem;
+    color: #7C7979;
+    text-align: center;
+    padding: 10px 20px;
+}
+.nav_bar > li > a{
+    color: #7C7979;
+}
+.nav_bar > li > a:hover{
+    color: #07135c;
+}
+.logo{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+.logo img{
+    width: 130px;
+    margin-top: 20px;
+}
+
+/* 메인영역 */
+.contact_wrapper{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    height: 700px;
+}
+.contact_info{
+    width: auto;
+    padding-right: 30px;
+}
+.contact_info h2{
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+.contact_info span{
+    margin-top: 10px;
+    color: #7C7979;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.personal_info{
+    text-align: left;
+    margin-top: 10%;
+    color: #7C7979;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 4;
+}
+.personal_info li img{
+    padding-right: 30px;
+}
+.form{
+    margin: 0px 0px 0px 90px;
+    width: 480px;
+    height: 670px;
+    box-shadow: 0 10px 10px 10px rgb(0 0 0 / 8%);
+}
+.inner_form{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 40px 40px 10px 40px;
+}
+.form_box{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.form_box > label{
+    font-size: 0.8rem;
+    color: #7C7979
+}
+.form_box> .name_inner_box,
+.form_box > .contact_inner_box,
+.form_box > textarea{
+    margin: 10px auto;
+    border: 1px solid #b9b6b68f;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    background: #ffffffa2;
+    padding-left: 10px;
+    height: 50px;
+    width: 100%;
+    text-indent: 0px;
+}
+.form_box > textarea{
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    text-indent: 0px;
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.submit_button{
+    position: relative;
+    display: flex;
+    float: center;
+    margin: 40px auto 10px;
+    padding: 16Px 40px;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all,0.7s;
+}
+.submit_icon{
+    width: 20px;
+    height: 20px;
+    transform: translate(5px,-5px);
+    transition: all,0.5s;
+}
+.submit_button:hover > .submit_icon{
+    color: #fff;
+    transform: translate(20px, -10px) rotate(20deg);
+}
+.submit_text{
+    font-size: 0.8rem;
+}
+/* 고정 푸터영역 */
+.footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.footer_wrapper {
+    width: 100%;
+    height: 180px;
+    padding: 0;
+    bottom: 0;
+}
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    background: #07135c;
+    height: auto;
+}
+.footer_copyright p,
+.footer_copyright,
+.footer_letter{
+    color: #fff;
+}
+.footer_letter,.footer_copyright{
+    padding: 10px;
+}
+.footer_letter,
+.footer_copyright p{
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.footer_copyright{
+    width: 100%;
+    margin: 0px auto;
+}
+.footer_links{
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+.footer_links img{
+    padding: 10px;
+    width: 20px;
+}
+/* 페이지 맨 위로 가는 키 */
+.to-top{
+    position: fixed;
+    right: 0;
+    bottom: 5rem;
+    padding: 0 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7C7979;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active{
+    bottom: 5rem;
+    pointer-events: auto;
+    opacity: 1;
+}
+.link-text{
+    transform: rotate(180deg);
+    color: #7C7979;
+    letter-spacing: 3px;
+    font-size:1rem;
+    text-transform: uppercase;
+}
+.to-top .line{
+    background: #7C7979;
+    width: 40px;
+    height: 1px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.to-top .line:before,
+.to-top .line:after{
+    background: #7C7979;
+}
+.to-top span.line:after,
+.to-top span.line:before{
+    content:"";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 1px;
+    transform-origin: center right;
+}
+.to-top span.line:after{
+    transform: rotate(35deg);
+}
+.to-top span.line:before{
+    transform: rotate(-35deg);
+}
