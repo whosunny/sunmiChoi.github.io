@@ -343,7 +343,7 @@ html{
     right: 0;
 }
 .bx-controls-direction .bx-prev:before{
-    content:"\276e";
+    content:"\276E";
 }
 .bx-controls-direction .bx-next:before{
     content:"\276F";
